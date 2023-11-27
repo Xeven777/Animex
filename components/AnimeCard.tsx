@@ -1,3 +1,4 @@
+import { fetchAnime } from "@/app/action";
 import Image from "next/image";
 
 export interface AnimeProp {
@@ -17,10 +18,12 @@ interface Prop {
   index: number;
 }
 
-function AnimeCard({ anime }: Prop) {
+async function AnimeCard({ anime }: Prop) {
+const data=await fetchAnime();
+
   return (
     <div className="max-w-sm rounded relative w-full">
-      <div className="relative w-full h-[37vh]">
+      <div className="relative w-full h-[400px]">
         <Image
           src={anime.image.original}
           alt={anime.name}
