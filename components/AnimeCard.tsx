@@ -19,12 +19,12 @@ interface Prop {
 }
 
 async function AnimeCard({ anime }: Prop) {
-const data=await fetchAnime();
 
   return (
     <div className="max-w-sm rounded relative w-full">
       <div className="relative w-full h-[400px]">
         <Image
+          // src={`https://shikimori.one${anime.image.original}`}
           src={anime.image.original}
           alt={anime.name}
           fill
