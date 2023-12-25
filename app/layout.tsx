@@ -11,10 +11,11 @@ const dmSans = DM_Sans({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Animex",
   description: "Your favorite anime, all in one place.",
+  metadataBase:new URL("https://animexs.vercel.app/"),
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://animex.vercel.app",
+    url: "https://animexs.vercel.app/",
     title: "Animex",
     description: "Your favorite anime, all in one place.",
     images: [
