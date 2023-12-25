@@ -9,8 +9,22 @@ import "./globals.css";
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Anime Vault",
+  title: "Animex",
   description: "Your favorite anime, all in one place.",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://animex.vercel.app",
+    title: "Animex",
+    description: "Your favorite anime, all in one place.",
+    images: [
+      {
+        url: "https://i.imgur.com/RIjpG7ol.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
